@@ -1,0 +1,11 @@
+﻿@model MvcCeviri.Models.Entity.Ceviri
+@{
+    ViewBag.Title = "CeviriKontrol";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    var SonrakiSoru = Model.Id + 1;
+}
+
+
+<div><h1>@Model.Ingilizce</h1></div>
+<div><h1>@Model.Turkce</h1></div>
+<div><a href="/Ceviri/Index/@SonrakiSoru" class="btn btn-primary">Sonraki Soru</a></div>

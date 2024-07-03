@@ -1,0 +1,17 @@
+﻿@using MvcCeviri.Controllers
+@model Ceviri 
+@{
+    ViewBag.Title = "";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@if (@Model == null)
+{
+    <div><h1>Test Bitti</h1></div>
+}
+else
+{
+    <div><h1>@Model.Ingilizce</h1></div>
+    <div><a href="/Ceviri/CeviriKontrol/@Model.Id" class="btn btn-primary">Ceviri Kontrol </a></div>
+}
+
+
